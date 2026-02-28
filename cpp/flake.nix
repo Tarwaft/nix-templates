@@ -7,12 +7,7 @@
   };
 
   outputs = { self, nixpkgs, flake-utils }:
-  templates.cpp = {
-    path = ./cpp;
-    description = "C++ development shell";
-  };
-
-  templates.default = self.templates.cpp;
+  
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
