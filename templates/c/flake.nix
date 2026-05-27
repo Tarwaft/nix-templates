@@ -43,12 +43,12 @@
           ];
 
           # Shell hook: printed when you enter the shell
-          shellHook = ''
-            echo "🔧  C++ dev shell ready"
-            echo "   compiler : $(c++ --version | head -1)"
-            echo "   cmake    : $(cmake --version | head -1)"
-            echo ""
-          '';
+          # shellHook = ''
+          #   echo "🔧  C++ dev shell ready"
+          #   echo "   compiler : $(c++ --version | head -1)"
+          #   echo "   cmake    : $(cmake --version | head -1)"
+          #   echo ""
+          # '';
 
           # Make clangd find the right headers
           CMAKE_EXPORT_COMPILE_COMMANDS = "1";
