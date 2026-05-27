@@ -1,15 +1,25 @@
 {
   description = "My Nix templates";
 
-  outputs = { self }: {
-    templates.cpp = {
-      path = ./templates/cpp;
-      description = "C++ development shell";
-    };
+  outputs =
+    { self }:
+    {
+      templates = {
+        cpp = {
+          path = ./templates/cpp;
+          description = "C++ development shell";
 
-    templates.glad = {
-      path = ./templates/glad;
-      description = "default glad setup for OpenGL 4.6";
+        };
+
+        c = {
+          path = ./templates/c;
+          description = "C development shell";
+        };
+
+        glad = {
+          path = ./templates/glad;
+          description = "default glad setup for OpenGL 4.6";
+        };
+      };
     };
-  };
 }
