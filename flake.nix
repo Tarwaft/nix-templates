@@ -2,7 +2,7 @@
   description = "My Nix templates";
 
   outputs =
-    { }:
+    { self }:
     {
       templates = {
         cpp = {
