@@ -24,10 +24,10 @@
           packages = with pkgs; [
             cargo
             rustc
+            rust-analyzer
             gcc
             gnumake
             pkg-config
-            openssl
             zlib
           ];
           RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
